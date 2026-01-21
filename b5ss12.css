@@ -86,11 +86,11 @@
 }
 
 @media (max-width: 600px) {
-    .faq h2 {
+    .quest h2 {
         font-size: 28px;
     }
 
-    .faq-item summary {
+    .quest-item summary {
         font-size: 15px;
     }
 }
