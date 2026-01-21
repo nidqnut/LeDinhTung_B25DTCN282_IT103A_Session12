@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: #f8fafc;
+}
+
+.pricing {
+    max-width: 1200px;
+    margin: auto;
+    padding: 60px 24px;
+}
+
+.heading {
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+.badge {
+    display: inline-block;
+    background: #eef2ff;
+    color: #4f46e5;
+    padding: 6px 12px;
+    border-radius: 12px;
+    font-size: 12px;
+    margin-bottom: 12px;
+}
+
+.heading h1 {
+    font-size: 32px;
+    margin-bottom: 8px;
+}
+
+.heading p {
+    color: #555;
+    
+}
+
+.pricing-list {
+    display: flex;
+   flex-wrap: wrap;
+   justify-content: space-evenly;
+   
+}
+
+.card {
+    background: #fff;
+    padding: 32px 24px;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+    display: flex;
+    flex-direction: column;
+}
+
+.card h3 {
+    font-size: 20px;
+    margin-bottom: 16px;
+}
+
+.price {
+    margin-bottom: 24px;
+}
+
+.amount {
+    font-size: 32px;
+    font-weight: bold;
+    color: #4f46e5;
+}
+
+.time {
+    color: #666;
+}
+.hr {
+    height: 1px;
+    background: grey;
+    margin: 40px 0 20px;
+    }
+.contact {
+    font-size: 28px;
+    font-weight: bold;
+    color: #4f46e5;
+}
+
+.card ul {
+    list-style: none;
+    margin-bottom: 24px;
+}
+
+.card ul li {
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #444;
+}
+
+.btn {
+    text-align: center;
+    padding: 12px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.primary {
+    background: #2563eb;
+    color: white;
+}
+
+.outline {
+    border: 1px solid #2563eb;
+    color: #2563eb;
+}
+
+.primary:hover {
+    background: #1d4ed8;
+}
+
+.outline:hover {
+    background: #eef2ff;
+}
+
+.featured {
+    border: 2px solid #6366f1;
+    transform: translateY(-10px);
+    
+}
+
+@media (max-width: 992px) {
+    .pricing-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 576px) {
+    .pricing-list {
+        grid-template-columns: 1fr;
+    }
+
+    .featured {
+        transform: none;
+    }
+}

@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.quest {
+    padding: 80px 20px;
+    background: #f9fafb;
+    text-align: center;
+}
+
+.quest-container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.quest-badge {
+    display: inline-block;
+    padding: 6px 14px;
+    background: #eef2ff;
+    color: #6366f1;
+    border-radius: 999px;
+    font-size: 14px;
+    margin-bottom: 12px;
+    
+}
+
+.quest h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.quest-desc {
+    color: #6b7280;
+    margin-bottom: 40px;
+}
+
+.quest-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.quest-item {
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid #e5e7eb;
+}
+
+.quest-item summary {
+    list-style: none;
+    padding: 16px 20px;
+    cursor: pointer;
+    font-weight: 500;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.quest-item summary::-webkit-details-marker {
+    display: none;
+}
+
+.quest-item .icon {
+    transition: transform 0.3s;
+}
+
+.quest-item[open] summary {
+    background: #6366f1;
+    color: #fff;
+}
+
+.quest-item[open] .icon {
+    transform: rotate(180deg);
+}
+
+.quest-item p {
+    padding: 16px 20px;
+    text-align: left;
+    color: #4b5563;
+    line-height: 1.6;
+}
+
+@media (max-width: 600px) {
+    .faq h2 {
+        font-size: 28px;
+    }
+
+    .faq-item summary {
+        font-size: 15px;
+    }
+}
